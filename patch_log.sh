@@ -1,0 +1,1 @@
+sed -i '/if (response.isSuccessful && responseBodyString.isNotBlank()) {/i \            if (!response.isSuccessful) {\n                android.util.Log.e("GeminiAPI", "HTTP Error: ${response.code} ${response.message}\\nBody: $responseBodyString")\n            }' app/src/main/java/com/example/api/GeminiService.kt

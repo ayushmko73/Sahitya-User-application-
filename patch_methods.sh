@@ -1,0 +1,1 @@
+sed -i 's/val apiKey = getApiKeyForIndex(apiKeyIndex)/val apiKey = getApiKeyForIndex(apiKeyIndex)\n        android.util.Log.d("GeminiAPI", "Final key: ${apiKey.take(10)}..., Is Blank? ${apiKey.isBlank()}, Is MY_GEMINI? ${apiKey == "MY_GEMINI_API_KEY"}")/g' app/src/main/java/com/example/api/GeminiService.kt

@@ -1,0 +1,3 @@
+sed -i 's/val userBubbleBg = if (isDarkMode) Color(0xFF3B0B14) else Color(0xFFFFECEF)/val userBubbleBg = if (isDarkMode) SurfaceDark else Color.White/g' app/src/main/java/com/example/ui/screens/RoleplayChatScreen.kt
+sed -i 's/val userBubbleBorder = if (isDarkMode) SahityaRed else Color(0xFFFFA2B0)/val userBubbleBorder = if (isDarkMode) CardBorderDark else Color(0xFFE0E0E0)/g' app/src/main/java/com/example/ui/screens/RoleplayChatScreen.kt
+sed -i 's/color = if (isUser) SahityaRed else SahityaGoldBright,/color = if (isUser) (if (isDarkMode) TextCrispWhite else Color.Black) else SahityaGoldBright,/g' app/src/main/java/com/example/ui/screens/RoleplayChatScreen.kt

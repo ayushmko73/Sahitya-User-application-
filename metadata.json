@@ -1,0 +1,6 @@
+{
+  "name": "Sahitya",
+  "description": "AI Roleplay and Interactive Storytelling platform with S-Coins currency, story genres, top-up store, and active character chats.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

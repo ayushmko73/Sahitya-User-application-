@@ -1,0 +1,4 @@
+sed -i 's/checkAndRun8020SummarizationTrigger(characterId, characterTitle)/checkAndRun8020SummarizationTrigger(characterId, characterTitle, assignedKeyIndex)/g' app/src/main/java/com/example/data/SahityaRepository.kt
+sed -i 's/private suspend fun checkAndRun8020SummarizationTrigger(characterId: String, characterTitle: String)/private suspend fun checkAndRun8020SummarizationTrigger(characterId: String, characterTitle: String, apiKeyIndex: Int)/g' app/src/main/java/com/example/data/SahityaRepository.kt
+sed -i 's/val summaryBlock = GeminiService.generate8020RollingSummary(/val summaryBlock = GeminiService.generate8020RollingSummary(\n                    apiKeyIndex = apiKeyIndex,/g' app/src/main/java/com/example/data/SahityaRepository.kt
+sed -i 's/val summaryEmbedding = GeminiService.generateTextEmbedding(summaryBlock)/val summaryEmbedding = GeminiService.generateTextEmbedding(summaryBlock, apiKeyIndex)/g' app/src/main/java/com/example/data/SahityaRepository.kt
